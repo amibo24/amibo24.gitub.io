@@ -1,5 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mohamed-Wassim Chachoua</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<p> HELLO WORLD ^^</p>  
+
+    <header>
+        <h1>PortFolio Mohamed-Wassim Chachoua</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('Accueil')"><h3>Accueil</h3></a></li>
+                <li><a href="#" onclick="showPage('propos')"><h3>A propos de moi</h3></a></li>
+                
+                <li class="dropdown">
+                    <a href="#"><h3>AP 1ère année</h3> <span class="arrow">▾</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showPage('ap1')">année 1</a></li>
+                    
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#"><h3>AP 2ème année</h3><span class="arrow">▾</span></a>
+                    <ul class="dropdown-menu">
+                        
+                        <li><a href="#" onclick="showPage('ap2')">année 2</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" onclick="showPage('stages')"><h3>Stages</h3><span class="arrow">▾</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showPage('stages1')">1ÈRE ANNÉE</a></li>
+                        <li><a href="#" onclick="showPage('stages2')">2ÈME ANNÉE</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" onclick="showPage('veille')"><h3>Veille technologique</h3></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="Accueil" class="page active">
+            <h2>Accueil</h2>
+            <p>Je m'appelle Mohamed Wassim Chachoua, je suis actuellement en BTS SIO premiére année au lycée la Martinière Duchère.</p>
+            
+            <h3>Le BTS SIO</h3>
+            <p>Formation aux métiers de technicien informatique : administration réseau ou développement d'applications.</p>
+            
+            <h3>L'option SISR</h3>
+            <p>La spécialité SISR : Solutions d'Infrastructure, Systèmes et Réseaux.</p>
+            
+            <h3>Le portfolio</h3>
+            <p>Ce portfolio illustre les compétences développées durant mon cursus.</p>
+        </section>
+
+        <section id="propos" class="page">
+            <h2>A propos de moi</h2>
+            <p>Mon CV :</p>
+            <div class="cv-container">
+                <img src="image/cv.png" alt="CV Mohamed-Wassim Chachoua" class="cv-image">
+            </div>
+        </section>
+
+        <section id="ap1" class="page">
+            <h2>Ateliers Professionnels de la 1ère année</h2>
+            <p>Contenu des missions de la 1ère année</p>
+            
+        
+
+        </section>
+
+        <section id="ap2" class="page">
+            <h2>Ateliers Professionnels de la 2ème année</h2>
+            <p>Contenu des missions de la 2ème année</p>
+        </section>
+
+        <section id="stages1" class="page">
+            <h2>Mon premiers Stages</h2>
+            <h3>presentation de l'entreprise</h3>
+            <p>j’ai réalisé mon stage dans l’entreprise Rhone GSM durant 6 semaines , du 11 mai au 19 juin 2025</p>
+
+        </section>
+        
+        <section id="stages2" class="page">
+            <h2>Mon deuxièmes Stages</h2>
+            <p>Détails de mes expériences en entreprise.</p>
+        </section>
+
+        <section id="veille" class="page">
+            <h2>Veille Technologique</h2>
+            <p>Contenu à venir...</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
-<html>
+</html>
